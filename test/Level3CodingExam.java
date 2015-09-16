@@ -45,7 +45,7 @@ public class Level3CodingExam {
 	 * PART B
 	 * 
 	 * To complete this exercise, you need to count the number of matching entries in 2 HashMaps. 
-	 * More information about the problem is here: http://bit.ly/1EBRZ5W
+	 * More information about the problem is here: http://bit.ly/stanford-exam-part7
 	 * This question is part of Stanford University's CS106 final exam. **/
 	@Test
 	public void testAddMatching() throws Exception {
@@ -53,17 +53,17 @@ public class Level3CodingExam {
 		hashmap1.put("Alice", "Healthy");
 		hashmap1.put("Mary", "Ecstatic");
 		hashmap1.put("Bob", "Happy");
-		hashmap1.put("Chuck", " Fine");
+		hashmap1.put("Chuck", "Fine");
 		hashmap1.put("Felix", "Sick");
 
 		HashMap<String, String> hashmap2 = new HashMap<String, String>();
-		hashmap2.put("Mary", "Ecstatic ");
+		hashmap2.put("Mary", "Ecstatic");
 		hashmap2.put("Felix", "Healthy");
 		hashmap2.put("Ricardo", "Superb");
 		hashmap2.put("Tam", "Fine");
 		hashmap2.put("Bob", "Happy");
 
-		assertEquals(1, new HashMapCalculator().commonKeyValuePairs(hashmap1, hashmap2));
+		assertEquals(2, new HashMapCalculator().commonKeyValuePairs(hashmap1, hashmap2));
 	}
 }
 
